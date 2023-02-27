@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container{
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.container h1{
+    font-size: 2.5em;
+    color: #4a4a4a;
+}
+section h2{
+    font-size: 1em;
+    margin: 1.8em 0;
+    font-weight: lighter;
+    text-align: justify;
+}
+section.dois input#numero{
+    margin-bottom: .5em;
+    outline: none;
+}
+section.dois button#btnDois {
+   padding: .4em;
+   color: brown;
+   border: none;
+   background-color: rgb(209, 173, 173);
+   font-size: .8em;
+   font-weight: bold;
+   cursor: pointer;
+}
+section.dois button#btnDois:hover{
+    color: white;
+    background-color: brown;
+}
+section.quatro ul#quatro-lista{
+    list-style-type: none;
+    display: flex;
+}
+section.quatro ul#quatro-lista li{
+    border: 1px solid black;
+    margin: .4em;
+    padding: .2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  padding: .4em;
+}
