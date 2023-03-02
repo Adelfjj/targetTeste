@@ -21,10 +21,8 @@ const fibonacci = (entrada) => {
 
     if(fibonacci.includes((entrada))){
         messagem("O número informado pertence a sequência");
-        console.log(fibonacci);
     }else{
         messagem("O número informado não pertence a sequência");
-        console.log(fibonacci);
     }
 }
 const messagem = (texto) => {
@@ -94,8 +92,6 @@ const mediaFaturamento = (media,dados) => {
             fsuperior.push(obj);
         }
     }
-
-    media = media / diaUtil;
     
     mediaF.innerHTML = `Número de dias no mês em que o valor de faturamento diário foi superior à média mensal: <strong> ${fsuperior.length}</strong>`;
 }
@@ -154,18 +150,12 @@ ftotal();
 let reverseString = document.querySelector("#reverso");
 
 const invertString = () => {
-    let stringg = "Target";
-    let split = stringg.split("");
-    let reverso = [];
-    var increment = 0;
+    let stringg = "Target Sistemas";
+    let reverso = '';
 
-    for(let i=split.length - 1; i >= 0; i--){
-        console.log(split[i]);
-        reverso[increment] = split[i];
-        increment++;
+    for(let i=stringg.length - 1; i >= 0; i--){
+      reverso += `${stringg[i]}`;
     }
-
-   reverso =  reverso.join("");
 
    reverseString.innerHTML = `String original: ${stringg}, string invertida: ${reverso}`
     
